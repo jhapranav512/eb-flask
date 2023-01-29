@@ -8,13 +8,13 @@ response = list()
 
 @application.route("/")
 def say_hello():
-    return jsonify("Hello from Flask Application")
+    return jsonify("Welcome to Home Page")
 
 
 @application.route("/name")
 def say_hello_from_request():
     name = request.json.get("name")
-    return jsonify("hello " + name)
+    return jsonify("my name is " + name)
 
 
 @application.route("/adddata", methods=["POST"])
