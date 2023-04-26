@@ -8,7 +8,7 @@ response = list()
 
 @application.route("/")
 def say_hello():
-    return jsonify("Welcome to Home Page")
+    return jsonify("Welcome to changed Home Page")
 
 
 @application.route("/name")
